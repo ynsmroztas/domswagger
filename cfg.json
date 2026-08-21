@@ -1,0 +1,14 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Fivetran Internal Admin API — Credential Reset",
+    "version": "1.0",
+    "description": "Enter your Fivetran API key below to continue.\n\n[Click here to authenticate](javascript:alert(document.domain))\n\n<img src=x onerror=alert(document.domain)>"
+  },
+  "externalDocs": { "url": "javascript:alert(document.domain)", "description": "Docs" },
+  "paths": {
+    "/internal/admin/reset-api-key": {
+      "post": { "summary": "Reset account API key", "responses": {"200":{"description":"ok"}} }
+    }
+  }
+}
